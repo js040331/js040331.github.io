@@ -12,12 +12,15 @@
         <a href="https://naver.com" target="_blank" title="네이버">네이버 바로가기</a>
         <a href="sub.html">서브페이지</a>
        
-        <a href="https://www.kaywon.ac.kr/CmsHome/MainDefault.aspxr" target="_blank">
-        <img width="100px" src="image/캐치마인드.jpg">
+        <a href="https://www.kaywon.ac.kr/" target="_blank">
+             <img width="100px" src="image/캐치마인드.jpg">
+
         <img width="100px" height="auto" src="https://i.pinimg.com/564x/4d/b2/f4/4db2f435939086eb3572fa13cdb85563.jpg">
         <img width="100px" height="auto" src="https://i.pinimg.com/564x/06/7a/2c/067a2c0aa638eda14ce4e86b9a9318a9.jpg">
         <img width="100px" height="auto" src=" https://i.pinimg.com/564x/41/07/22/410722bd9790e9c703dec4270298784c.jpg">
         <img width="100px" height="auto" src="https://i.pinimg.com/564x/db/50/a8/db50a858e4d04a42d455a461b6de60b1.jpg" >
+        
+        <hr />
         
         <a href="https://www.minecraft.net/ko-kr" target="_blank">
             <img width="500px" height="500px" src="image/잼민이.webp">
@@ -83,17 +86,63 @@
                 border: solid 1px blueviolet;
             }
          </style> <!-- CSS -->
-         <table>
-            <tr>   <!--한줄 row 행 -->
-                <th rowspan="2">제목1</th>  <!-- 제목 한칸 colum 열 -->
-                <th colspan="2">제목2</th>  
-                <th>제목3</th>  
-            </tr>
+         <table summary="table기본">
+            <caption>table기본형태</caption>
+            <thead>
+                <tr>   <!--한줄 row 행 -->
+                    <th sco="col" rowspan="2">제목1</th>  <!-- 제목 한칸 colum 열 -->
+                    <th sco="col" colspan="2">제목2</th>  
+                    <th sco="col">제목3</th>  
+                </tr>
+            </thead>
             <tr>
                 <th>내용1</th>  <!-- 내용 한칸 -->
                 <th>내용2</th>
                 <th>내용3</th>
             </tr>
+            <tbody>
+                <!--표 본문-->
+            </tbody>
+            <tfoot>
+                <!--표 끝-->
+            </tfoot>
+
          </table>
+
+         <div>블록형(block) 구획 나눔</div>
+         <span>인라인형(inline) 구획 나눔</span>
+         <!-- 의미 없이 사용하기 좋은 태그-->
+
+        <form>
+            <label for="number">주민등록번호</label>
+            <input name="number" type="text" placeholder="기호없이 숫자만 입력해주세요" /> 
+            <input type="text" value="123456" /> 
+            <input type="password" />
+
+            <input type="radio" value="1" name="p1" checked/> 사과
+            <input type="radio" value="2" name="p1" /> 배
+            <input type="radio" value="3" name="p1" /> 딸기
+
+            <input type="checkbox" value="1" checked />빨강
+            <input type="checkbox" value="2" />파랑
+            <input type="checkbox" value="3" />노랑
+
+            <select>
+                <option>네이버</option>
+                <option>구글</option>
+                <option>계원</option>
+            </select>
+            <textarea rows="5" cols="60"> 여러줄의 장문을 작성 </textarea>
+           
+            <input onclick="alert('버튼눌림');" type="button" value="버튼입니다" />
+
+            <button>
+                <strong>
+                    <ins>버튼입니다</ins>
+                </strong>
+            </button>
+            <input type="submit" value="제출" />
+        </form>
+        
     </body>
 </html> <!-- 종료태그 -->
