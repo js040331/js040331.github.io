@@ -9,6 +9,9 @@
                 color:rgb(224, 49, 148);
                 text-align: center;
             }
+            #bt1{
+                height: 50px;
+            }
          </style>
         <title>고양이 백과사전</title>
         <meta charset="utf-8" />
@@ -21,17 +24,17 @@
         <h2>로그인</h2> 
             </tr>
                 <form>
-                    <label>아이디</label>
-                    <input name="number" type="text" placeholder="아이디 혹은 이메일" />
-                    <input onclick="alert('정상적으로 로그인 되셨습니다.');" type="button" value="로그인" rowspan="2" />
-                     <br />        <audio controls>
-            <source src="mp3/happy-happy-happy-cat.mp3" type="audio/mpeg">
-        </audio>
-                    <label>비밀번호</label>
-                    <input type="password" placeholder="비밀번호" /> 
-                </form>
-                    <input type="checkbox" value="1" checked />아이디 저장
-                    <input type="checkbox" value="2" />로그인 상태 유지
+                    <table summary="table기본">
+                            <tr> 
+                                <th> <input name="number" type="text" placeholder="아이디" /></th>  
+                                <th rowspan="2"><input id="bt1" onclick="alert('정상적으로 로그인 되셨습니다.');" type="button" value="로그인" /></th> 
+                            </tr>
+                            <tr> 
+                                <th><input type="password" placeholder="비밀번호" /> </th>
+                            </tr>
+                    </table>
+                 <input type="checkbox" value="1" checked />아이디 저장
+                 <input type="checkbox" value="2" />로그인 상태 유지
     <hr />
         <h2>해피캣</h2>
         <h5>고양이 밈의 원조 매우 귀여움 <del> 사실 조금 질림</del></h5>
@@ -43,18 +46,32 @@
         </audio>
 
 
-        <hr />  
+    <hr />  
         <h2>바나나캣</h2>
         <h5>우는게 매우 귀여움 <del> 마인크래프트 밈이랑 섞였을때 물 양동이 취급</del></h5>
         <h3><a href="https://www.youtube.com/watch?v=5Ez6ozZg5Mw" target="_blank">울음 소리 1시간 듣기 </a></h3> <br/>
-    <img width="280px" height="380px" src="image/바나나캣.jpg" />  
-    <img width="280px" height="380px" src="image/우는 바나나캣.jpg" /> 
-    <img width="280px" height="380px" src="image/하트를 든 바나나캣.jpg" /> 
-
+            <table summary="table기본">
+                <tr> 
+                    <th><img width="280px" height="380px" src="image/바나나캣.jpg" /></th>
+                    <th><img width="280px" height="380px" src="image/우는 바나나캣.jpg" /></th>
+                    <th><img width="280px" height="380px" src="image/하트를 든 바나나캣.jpg" /><th>
+                </tr>
+                <tr> 
+                    <th><img width="280px" height="380px" src="image/바나나 캣 인혀.jpg"/></th>
+                </tr>
+            </table>
+            <h3>인기가 많아 굿즈인형도 출시된 모습이다.</h3>
     <audio controls>
         <source src="mp3/banana-cat-made-with-Voicemod-technology.mp3" type="audio/mpeg">
     </audio>
 
-        <hr />
+    <hr />
+    <h2>스머프캣</h2>
+    <h5>요즘 유행중인 대세 고양이 이다.<em><ins>we live we love we lie</ins></em><br/>
+    <a href="https://www.youtube.com/watch?v=Wjavakm7gMQ" target="_blank">유튜브에서 보기</a><br/>
+    <img width="280px" height="380px" src="image/스머프캣.jpg">
+    <audio controls>
+        <source src="mp3/we-live-we-love-we-lie.mp3" type="audio/mpeg">
+    </audio>
     </body>
 </html>
