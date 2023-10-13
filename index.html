@@ -5,12 +5,19 @@
         <meta charset="utf-8" />
         <!-- utf8, euc kr-->
         <meta name="keywords" content="웹 퍼블리싱, 계원, html css" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <style>
+            body{
+                color: yellow;
+                font-size: 20px;
+            }
+        </style>
     </head>
     <body> <!-- 본문 -->
         <a href="https://www.google.com">구글 바로가기</a>
         <a href="https://cafe.naver.com/kwdmd">카페 바로가기</a>
         <a href="https://naver.com" target="_blank" title="네이버">네이버 바로가기</a>
-        <a href="sub.html">서브페이지</a>
+        <a style="color: red;"><a href="sub.html">서브페이지</a>
        
         <a href="https://www.kaywon.ac.kr/" target="_blank">
              <img width="100px" src="image/캐치마인드.jpg">
@@ -139,10 +146,57 @@
             <button>
                 <strong>
                     <ins>버튼입니다</ins>
+
                 </strong>
             </button>
             <input type="submit" value="제출" />
         </form>
-        
-    </body>
+
+        <div></div>
+        <section>
+            <h1>구획</h1>
+            구획내용
+        </section>
+        <nav>
+            <ul>
+                <li><a href="링크주소1">버튼1</a></li>
+                <li><a href="링크주소2">버튼2</a></li>
+            </ul>
+            <a href="링크주소1">버튼1</a>
+            <a href="링크주소2">버튼2</a>
+        </nav>
+        <article><!-- 문서 주제와 다소 벗어난 이야기 -->
+            <h1>기사 제목</h1>
+            기사 내용
+        </article>
+        <aside><!-- 상관 없는 이야기 -->
+            <h1>광고 제목</h1>
+            광고 내용
+        </aside>
+        <header></header><!--본문(body)의 서론-->
+        <footer></footer><!--본문(body)의 결론-->
+
+        <canvas id="myCanvas"></canvas>
+        <script>
+            var canvas= document.getElementById("myCanvas"); 
+            //get elemnt by id
+            //id기준으로 요소 가져오기
+            var ctx = canvas.getContext("2d");
+            //get context 내용 가져오기 
+            ctx.fillStyle = "#FF0000"; //색을 지정합니다.
+            ctx.fillRect(25, 25, 100, 100); //채움 사각형
+            ctx.clearRect(45, 45, 60, 60); //사각형태로 지우기
+            ctx.strokeRect(50, 50, 50, 50); //윤곽 사각형
+        </script>
+
+        <audio controls>
+            <source src="mp3/file_example_MP3_700KB.mp3" type="audio/mpeg">
+        </audio>
+
+        <video controls>
+            <source src="mp4/file_example_MP4_480_1_5MG.mp4" type="video/mp4">
+        </video>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/MscUSlbvIw4?si=l5SjgJSFm521nyfu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+     </body>
 </html> <!-- 종료태그 -->
